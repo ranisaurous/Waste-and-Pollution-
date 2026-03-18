@@ -1,0 +1,17 @@
+
+{% block content %}
+{% load static %}
+
+<!-- Navigation -->
+<nav>
+
+<h2 class="logo">Waste Tracker </h2>
+
+<ul>
+<li><a href="{% url 'home' %}">Home</a></li>
+<li><a href="{% url 'maps' %}">Pollution Map</a></li>
+<li><a href="{% url 'report' %}">Report Pollution</a></li>
+<li><a href="{% url 'eventsAndActivities' %}">Events And Activities</a></li>
+</ul>
+</nav>
+{% endblock %}

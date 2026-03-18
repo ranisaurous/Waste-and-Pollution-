@@ -1,6 +1,7 @@
+/* home.css */
 body {
     background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
-    font-family: "Lobster", sans-serif;
+    font-family:'Times New Roman', Times, serif;
     margin: 0;
 }
 
@@ -84,3 +85,246 @@ nav ul li a:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px darkblue;
 }
+/* maps.css */
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Lobster", sans-serif;
+}
+
+
+body{
+    background:#f4f4f4;
+}
+
+
+nav{
+    background:#2e7d32;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+
+.title{
+    text-align:center;
+    margin:20px;
+}
+
+
+.map-container{
+    width:90%;
+    margin:20px auto;
+}
+
+.map-container iframe{
+    width:100%;
+    height:450px;
+    border:0;
+    border-radius:10px;
+}
+
+/* Event and activities */
+ :root {
+            --primary-green: #2ecc71;
+            --dark-green: #27ae60;
+            --light-green: #d5f4e6;
+            --accent-orange: #e74c3c;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 0;
+        }
+
+        .header-section {
+            background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-green) 100%);
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .header-section p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(46, 204, 113, 0.2);
+        }
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--dark-green);
+            margin-bottom: 15px;
+        }
+
+        .card-text {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .card-footer {
+            background-color: var(--light-green);
+            border-top: 2px solid var(--primary-green);
+            padding: 15px 25px;
+        }
+
+        .badge-event {
+            background-color: var(--accent-orange);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .badge-activity {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .icon-box {
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            margin-bottom: 15px;
+        }
+
+        .btn-learn-more {
+            background-color: var(--primary-green);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-learn-more:hover {
+            background-color: var(--dark-green);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .time-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+            color: var(--dark-green);
+            font-weight: 500;
+        }
+
+        .container-custom {
+            max-width: 1200px;
+        }
+        button{
+          align-items: center;
+        }
+        .btn-primary {
+           background-color: var(--primary-green);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: var(--dark-green);
+            color: white;
+            transform: scale(1.05);
+        }
+/*report  */
+  body {
+            /* Replace the URL below with your preferred environmental background image */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            /* display: flex; */
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .form-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            margin: 2rem auto;
+        }
+         .btn-clear {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .btn-clear:hover {
+            background-color: #5a6268;
+            color: white;
+        }

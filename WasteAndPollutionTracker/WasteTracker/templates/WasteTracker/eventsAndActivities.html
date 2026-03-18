@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+   <!-- Header Section -->
+    <div class="header-section">
+        <div class="container-custom container">
+            <h1><i class="fas fa-leaf"></i> Community Waste Management</h1>
+            <p>Local Events & Activities for a Cleaner Neighbourhood</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-custom container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card 1: Community Cleanup Day -->
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'images/pexels-eberhardgross-1367192.jpg' %}" class="card-img-top" alt="Community cleanup">
+                    <div class="card-body">
+                        <span class="badge-event">EVENT</span>
+                        <div class="icon-box">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <h5 class="card-title">Community Cleanup Day</h5>
+                        <p class="card-text">Join neighbors in a weekly cleanup initiative every Saturday morning. We collect waste, recycle materials, and beautify our streets together.</p>
+                        <div class="time-info">
+                            <i class="fas fa-calendar"></i>
+                            Every Saturday, 7:00 AM - 10:00 AM
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <!-- <button class="btn btn-learn-more btn-sm">Join Us</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Recycling Workshop -->
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'images/pexels-freestockpro-1174183.jpg' %}" class="card-img-top" alt="Recycling workshop">
+                    <div class="card-body">
+                        <span class="badge-activity">ACTIVITY</span>
+                        <div class="icon-box">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h5 class="card-title">Recycling Workshop</h5>
+                        <p class="card-text">Learn how to sort waste properly and create useful items from recyclables. Our experts share practical tips for reducing household waste.</p>
+                        <div class="time-info">
+                            <i class="fas fa-clock"></i>
+                            Thursdays, 3:00 PM - 5:00 PM
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <!-- <button class="btn btn-learn-more btn-sm">Sign Up</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Compost Collection -->
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'images/pexels-veeterzy-38136.jpg' %}" class="card-img-top" alt="Composting">
+                    <div class="card-body">
+                        <span class="badge-activity">ACTIVITY</span>
+                        <div class="icon-box">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h5 class="card-title">Compost Collection Drive</h5>
+                        <p class="card-text">Collect organic waste for community composting. We process food scraps and garden waste into nutrient-rich soil for local gardens.</p>
+                        <div class="time-info">
+                            <i class="fas fa-calendar"></i>
+                            Mondays & Wednesdays, 4:00 PM - 6:00 PM
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <!-- <button class="btn btn-learn-more btn-sm">Participate</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Youth Waste Education -->
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'images/pexels-eberhardgross-1367192.jpg' %}" class="card-img-top" alt="Youth program">
+                    <div class="card-body">
+                        <span class="badge-event">EVENT</span>
+                        <div class="icon-box">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h5 class="card-title">Youth Waste Education Program</h5>
+                        <p class="card-text">Educational sessions for students on environmental conservation, proper waste management, and sustainable living practices.</p>
+                        <div class="time-info">
+                            <i class="fas fa-calendar"></i>
+                            Tuesdays, 2:00 PM - 3:30 PM
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <!-- <button class="btn btn-learn-more btn-sm">Enroll</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Plastic Bottle Collection -->
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'images/pexels-freestockpro-1174183.jpg' %}" class="card-img-top" alt="Plastic collection">
+                    <div class="card-body">
+                        <span class="badge-activity">ACTIVITY</span>
+                        <div class="icon-box">
+                            <i class="fas fa-trash"></i>
+                        </div>
+                        <h5 class="card-title">Plastic Bottle Collection</h5>
+                        <p class="card-text">Contribute used plastic bottles to our collection centers. Collected plastics are recycled into new products and prevent environmental pollution.</p>
+                        <div class="time-info">
+                            <i class="fas fa-clock"></i>
+                            Daily, 8:00 AM - 6:00 PM
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <!-- <button class="btn btn-learn-more btn-sm">Contribute</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Community Garden Day -->
+            <div class="col">
+                <div class="card">
+                    <img src="{% static 'images/pexels-veeterzy-38136.jpg' %}" class="card-img-top" alt="Community garden">
+                    <div class="card-body">
+                        <span class="badge-event">EVENT</span>
+                        <div class="icon-box">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h5 class="card-title">Community Garden Day</h5>
+                        <p class="card-text">Transform waste into resources through urban gardening. Plant vegetables and flowers using compost from our waste management program.</p>
+                        <div class="time-info">
+                            <i class="fas fa-calendar"></i>
+                            Sundays, 9:00 AM - 12:00 PM
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <!-- <button class="btn btn-learn-more btn-sm">Join</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+      <div class="container" style="margin-left: 680px; margin-top: 50px;">
+        <p>Have questions or want to learn more about our programs? Contact us today!</p>
+        
+      </div>
+      <button class="d-flex btn btn-primary"style="margin-left: 900px;">Contact Us</button>
+      <footer>
+        <div class="container-custom container text-center mt-5">
+            <p class="text-muted">&copy; 2024 Local Waste Management. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+{% endblock %}

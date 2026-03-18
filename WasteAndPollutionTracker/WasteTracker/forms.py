@@ -4,4 +4,4 @@ from .models import Report
 class ReportForm(ModelForm):
     class Meta:
         model = Report
-        fields = '_all_'
+        fields = '__all__'

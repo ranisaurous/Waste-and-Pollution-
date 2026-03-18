@@ -4,8 +4,8 @@ from .models import Report
 
 # Create your views here.
 def home(request):
-    report = report.objects.all()
-    context={"reports":reports}
+    report = Report.objects.all()
+    context={"report":report}
     return render(request, 'WasteTracker/home.html', context)
 
 def createReport(request):
@@ -23,12 +23,12 @@ def createReport(request):
 
 def readReport(request):
     report = Report.objects.all()
-    context = {"reports": reports}
+    context = {"report": report}
     return render(request, 'waterbodyApp/oceans.html', context)
 
 def readReport(request,pk):
     report = Report.objects.get(id=pk)
-    context = {"reports": reports}
+    context = {"report": report}
     return render(request, 'waterbodyApp/ocean.html', context)
 
 def updateReport(request,pk):

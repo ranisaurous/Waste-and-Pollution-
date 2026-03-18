@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center mb-4 text-success">Pollution Report Portal</h2>
+        <p class="text-muted text-center">Please provide details regarding the waste or pollution incident.</p>
+        <hr>
+
+        <form>
+              <div class="userNamePhone">
+                <!-- username input -->
+                <div>
+                    <label for="userName" class="form-label fw-bold">Name:</label><br />
+                    <input type="text" name="userName" placeholder="eg.Joe Doek" required />
+                </div>
+                <!-- userphone number -->
+                <div>
+                    <label for="userPhone" class="form-label fw-bold">Phone Number:</label><br />
+                    <input type="number" name="userPhone" placeholder="eg.+254712345678" required />
+                </div>
+            </div>
+            <div class="pollutionTypeDate">
+                  <!-- date -->
+                <div>
+                    <label for="Date" class="form-label fw-bold">Date:</label><br />
+                    <input type="date" name="Date" required/>
+                </div>
+                <!-- pollutionType -->
+                  <div class="mb-3">
+                <label for="pollutionType" class="form-label fw-bold">Type of Pollution:</label>
+                <select class="form-select" id="pollutionType" required>
+                    <option value="" selected disabled>Choose an option...</option>
+                    <option value="water">Water Pollution</option>
+                    <option value="air">Air Quality/Emission</option>
+                    <option value="solid-waste">Illegal Waste Dumping</option>
+                    <option value="noise">Noise Pollution</option>
+                    <option value="hazardous">Hazardous Chemicals</option>
+                </select>
+            </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="description" class="form-label fw-bold">Detailed Description</label>
+                <textarea class="form-control" id="description" rows="4" placeholder="Describe the severity and impact..." required></textarea>
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="reset" class="btn btn-clear px-4 ">Clear Form</button>
+                <button type="submit" class="btn btn-success px-5 me-md-2">Submit Report</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
