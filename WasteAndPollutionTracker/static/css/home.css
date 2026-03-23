@@ -1,4 +1,5 @@
 /* home.css */
+
 body {
     background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
     font-family:'Times New Roman', Times, serif;
@@ -148,12 +149,12 @@ nav ul li a{
 }
 
 /* Event and activities */
- :root {
-            --primary-green: #2ecc71;
-            --dark-green: #27ae60;
+:root {
+     --primary-green: #2ecc71;
+    --dark-green: #27ae60;
             --light-green: #d5f4e6;
             --accent-orange: #e74c3c;
-        }
+}
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
