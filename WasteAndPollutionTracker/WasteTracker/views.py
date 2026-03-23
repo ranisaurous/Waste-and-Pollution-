@@ -8,6 +8,16 @@ def home(request):
     context={"report":report}
     return render(request, 'WasteTracker/home.html', context)
 
+
+def maps(request):
+    context={}
+    return render(request, 'WasteTracker/maps.html', context)
+
+def report_page(request):
+    context={}
+    return render(request, 'WasteTracker/report.html', context)
+
+
 def createReport(request):
     form = ReportForm() # get an instance of the Ocean form
     if request.method == 'POST':
@@ -18,18 +28,13 @@ def createReport(request):
         else:
             print("kejljwejlwjlkwje=====")
     context = {'form':form}
-    return render(request, 'waterbodyApp/form.html', context)
+    return render(request, 'WasteTracker/form.html', context)
 
-
-def readReport(request):
-    report = Report.objects.all()
-    context = {"report": report}
-    return render(request, 'waterbodyApp/oceans.html', context)
 
 def readReport(request,pk):
     report = Report.objects.get(id=pk)
     context = {"report": report}
-    return render(request, 'waterbodyApp/ocean.html', context)
+    return render(request, 'WasteTracker/form.html', context)
 
 def updateReport(request,pk):
     report = Report.objects.get(id=pk)
@@ -37,23 +42,15 @@ def updateReport(request,pk):
     if request.method == 'POST':
         form = ReportForm(request.POST, instance= report)
         if form.is_valid():
-            report.save()
+            form.save()
             return redirect('read-reports')
     context = { "form":form}
-    return render(request,'waterbodyApp/form.html', context)
+    return render(request,'WasteTracker/form.html', context)
 
-def deleteReport(request, pk):
+def deleteReport(request,pk):
     report = Report.objects.get(id=pk)
     report.delete()  
     return redirect('read-reports')
-
-def maps(request):
-    context={}
-    return render(request, 'WasteTracker/maps.html', context)
-
-def report(request):
-    context={}
-    return render(request, 'WasteTracker/report.html', context)
 
 def eventsAndActivities(request):
     context={}
